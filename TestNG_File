@@ -23,5 +23,9 @@ String actualTitle = driver.getTitle();
 Assert.assertEquals(actualTitle, expectedTitle);
 }
 @AfterTest
-public void terminateBrows
+public void terminateBrowser()
+{
+driver.close();
+}
+}
 
